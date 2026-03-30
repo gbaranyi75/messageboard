@@ -126,7 +126,7 @@ export function MessageBoard() {
   const remainingCharacters = MAX_LENGTH - content.length;
 
   return (
-    <section className="relative w-full max-w-5xl overflow-hidden rounded-[2rem] border border-border bg-surface shadow-[0_28px_80px_rgba(71,52,36,0.12)] backdrop-blur-xl">
+    <section className="relative w-full max-w-5xl overflow-hidden rounded-4xl border border-border bg-surface shadow-[0_28px_80px_rgba(71,52,36,0.12)] backdrop-blur-xl">
       <div className="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,rgba(198,93,51,0.18),transparent_60%)]" />
       <div className="grid gap-8 p-5 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:p-10">
         <div className="relative flex flex-col justify-between rounded-[1.75rem] border border-border bg-surface-strong p-6 sm:p-8">
