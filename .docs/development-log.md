@@ -293,6 +293,18 @@ Ellenőrzöm a git állapotot és a remote beállítást, majd most azonnal felp
 **[GitHub Copilot]**
 Látszik, mi történt: a lokális változások (napló + `next-env.d.ts`) még nincsenek commitolva, és a branch sincs felpusholva; most commitolom ezeket és pusholom az egészet.
 
+---
+
+**[Felhasználó]**
+A publikus, működő url:
+https://messageboard-puce.vercel.app/
+
+**[GitHub Copilot]**
+Most gyorsan ellenőrzöm az éles URL-t (oldal + API válasz), majd frissítem a conversation logot ezzel a mérföldkővel.
+
+**[GitHub Copilot]**
+Az éles oldal és az API is válaszol (`200 OK`), most hozzáírom ezt a sikeres deploy állapotot a naplóhoz, hogy a leadandó log teljes legyen.
+
 **[GitHub Copilot]**
 A push azért bukott el, mert a GitHubon már van egy frissebb commit (tipikusan inicializáló README); most biztonságosan `pull --rebase`-szel összeillesztem, aztán újrapusholom.
 
