@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5efe4;
+  --foreground: #1d1f1a;
+  --surface: rgba(255, 251, 244, 0.82);
+  --surface-strong: rgba(255, 248, 238, 0.96);
+  --border: rgba(58, 44, 34, 0.14);
+  --accent: #c65d33;
+  --accent-strong: #9d3d18;
+  --muted: #6b665d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+  background-image:
+    radial-gradient(circle at top left, rgba(198, 93, 51, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(96, 141, 122, 0.16), transparent 26%),
+    linear-gradient(180deg, #fff9f0 0%, #f2eadc 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(29, 31, 26, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(29, 31, 26, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 90%);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(198, 93, 51, 0.22);
+}
