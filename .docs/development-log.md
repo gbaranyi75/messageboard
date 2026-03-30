@@ -237,3 +237,36 @@ A commitelés előtt megnézem a pontos git állapotot, hogy tisztán szét tudj
 
 **[GitHub Copilot]**
 A commiteléshez most két értelmes csomagra bontom a változásokat: először a Next.js frontend shell és projektalap kerül commitba, utána a Supabase-integráció és a teljes fejlesztési napló.
+
+**[GitHub Copilot]**
+Most ellenőrzöm a git user beállításokat és elkészítem az első commit stagingjét úgy, hogy a frontend shell önmagában is értelmes állapot legyen.
+
+**[GitHub Copilot]**
+A git identity rendben van; az első stagingnél a `next-env.d.ts` .gitignore miatt kimaradt, ezt most korrigálom és ellenőrzöm, pontosan mi kerül az első commitba.
+
+**[GitHub Copilot]**
+Az első stagingbe bekerültek az API route-ok is; ezeket kiveszem innen, hogy a második commit tisztán a Supabase-integrációról szóljon.
+
+**[GitHub Copilot]**
+Az első commit még nincs meg, ezért `restore --staged` nem működik; most ugyanazt a tisztítást `git reset`-tel végzem el.
+
+**[GitHub Copilot]**
+A dinamikus route zárójelei miatt az egyik fájl bent maradt a stagingben; ezt most pontosan, idézőjeles elérési úttal veszem ki.
+
+**[GitHub Copilot]**
+Az első commit csomagja most tiszta: projektalap, UI shell és buildfájlok vannak benne. Ezt most commitolom, utána külön viszem fel a Supabase és dokumentációs réteget.
+
+**[GitHub Copilot]**
+Az első commit elkészült: `7be2fa0 chore: bootstrap Next.js messageboard app`
+
+**[GitHub Copilot]**
+Az első commit kész. Most stagingelem a backend/Supabase/dokumentációs fájlokat, és ha minden tiszta, megy a második commit is.
+
+**[GitHub Copilot]**
+A második commit stagingje rendben van: csak a Supabase-integráció, az API-k, az SQL séma és a teljes conversation log kerül bele.
+
+**[GitHub Copilot]**
+A második commit elkészült: `b434b07 feat: add Supabase-backed messageboard workflow`
+
+**[GitHub Copilot]**
+A két funkcionális commit már megvan; most csak a naplót hozom teljesen szinkronba a commitfolyamattal, hogy a repo-ban ez a rész is szó szerint benne legyen.
