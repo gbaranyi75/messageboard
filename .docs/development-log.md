@@ -270,3 +270,25 @@ A második commit elkészült: `b434b07 feat: add Supabase-backed messageboard w
 
 **[GitHub Copilot]**
 A két funkcionális commit már megvan; most csak a naplót hozom teljesen szinkronba a commitfolyamattal, hogy a repo-ban ez a rész is szó szerint benne legyen.
+
+---
+
+**[Felhasználó]**
+Most létrehozom a deploy-t a Vercelen, és hozzáadom az env változókat is.
+
+**[GitHub Copilot]**
+Amíg beállítod a Vercel deployt és az env változókat, lefuttatok egy helyi production build ellenőrzést, hogy még deploy előtt kiszűrjünk minden blokkoló hibát.
+
+**[GitHub Copilot]**
+A build sikeresen lefutott, tehát a deploy technikailag jó eséllyel át fog menni; most ezt a státuszt is hozzáírom a conversation loghoz.
+
+---
+
+**[Felhasználó]**
+A githubon nem látom a projektet felpusholva!
+
+**[GitHub Copilot]**
+Ellenőrzöm a git állapotot és a remote beállítást, majd most azonnal felpusholom a `main` branchet a GitHub repóba.
+
+**[GitHub Copilot]**
+Látszik, mi történt: a lokális változások (napló + `next-env.d.ts`) még nincsenek commitolva, és a branch sincs felpusholva; most commitolom ezeket és pusholom az egészet.
